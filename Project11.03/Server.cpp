@@ -49,7 +49,7 @@ int CALLBACK DlgProc(HWND hWnd, UINT mes, WPARAM wp, LPARAM lp)
             int i = recv(acceptSocket, buf, MAXSTRLEN, 0);
             buf[i] = '\0';
 
-            SendMessage(hList1, LB_ADDSTRING, 0, (LPARAM)buf);
+            SendMessage(hList1, LB_ADDSTRING, 0, (LPARAM)buf); 
             break;
         }
         case IDC_BUTTON2:
